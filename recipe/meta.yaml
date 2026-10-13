@@ -1,13 +1,13 @@
 {% set name = "robotframework-mqttlibrary" %}
-{% set version = "0.7.1" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/robotframework-mqttlibrary-{{ version }}.tar.gz
-  sha256: b40d426cb33242b05b7f03a32f56bcb0c601f4568553a09dbbbcff17d0e900de
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: d5e10fad49aedc20535a7da416cc574b6bfcd4e609cdb37d33b243b0367914e6
 
 build:
   noarch: python
